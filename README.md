@@ -15,7 +15,7 @@ You can click on any elements by <kbd>Option</kbd> clicking (Windows:<kbd>Alt</k
 
 ## Executing Commands
 
-Any time you select a component, the code pane will pop up. Any edits you make to the code pane will be reflected in your browser and in your code. If you want to edit styling even faster, you can pull up the command palette with <kbd>Command</kbd><kbd>K</kbd> (Windows:<kbd>Ctrl</kbd>). Typing a class in the command palette will add that Tailwind class to the selected component. If the class you are trying to add conflicts with an existing class, Vivid will replace the old class with your new input. If you type out a class that the component already has, Vivid will remove that class.
+Any time you select a component, the code pane will pop up. Any edits you make to the code pane will be reflected in your browser and in your code. If you want to edit styling even faster, you can pull up the command palette with <kbd>Command</kbd><kbd>K</kbd> (Windows:<kbd>Ctrl</kbd><kbd>K</kbd>). Typing a class in the command palette will add that Tailwind class to the selected component. If the class you are trying to add conflicts with an existing class, Vivid will replace the old class with your new input. If you type out a class that the component already has, Vivid will remove that class.
 
 ## Known Issues
 
