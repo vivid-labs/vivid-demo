@@ -1,5 +1,5 @@
 # vivid-demo
-A demo repository to play around with Vivid! Mess around with a copy of our landing page to see how Vivid works! Learn more about Vivid at www.vivid.lol. If you want to test out an alpha version of Vivid on your own project, check out docs.vivid.lol!
+A demo repository to play around with Vivid! Mess around with a copy of our landing page to see how Vivid works! Learn more about Vivid at www.vivid.lol. If you want to test out an alpha version of Vivid on your own project, check out [docs.vivid.lol](<kbd>K</kbd>)!
 
 # Functionality
 
