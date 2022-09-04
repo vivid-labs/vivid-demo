@@ -19,6 +19,7 @@ cd vivid-demo
 npm install
 npm run dev
 ```
+We recommend Yarn, but if you're using npm, be sure to delete the yarn.lock file after cloning. 
 
 # Functionality
 
