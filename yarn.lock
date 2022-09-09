@@ -2080,10 +2080,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vivid-studio@^0.5.3:
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/vivid-studio/-/vivid-studio-0.5.4.tgz#1b73fd7da88e1fb9cde32a0f380f07813298e765"
-  integrity sha512-4StcgrAXBJ5dzUco7QV3w0JBTyS0XvV4/Mel7LZ/n8ATue1T4KgpYjoP5qnTXJOiVHE2m3i1rSIBSOyV0mGxlQ==
+vivid-studio@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/vivid-studio/-/vivid-studio-0.6.6.tgz#9a5c3367d4ebfabcf97fd70c93e4e7a3a09dec36"
+  integrity sha512-Z8t5SZ1oqyhpLdFxpq1pdWv8SJFMQze72O23yWWnHSlFRWaA5JisCRt/AZGZSZcg23Hw34dPB7Oa0LOfjrJMCA==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
