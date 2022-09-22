@@ -13,7 +13,7 @@ if (
   // && /VIVID_ENABLED=true/.test(document.cookie)
 ) {
   import("vivid-studio").then((v) => v.run());
-  import("vivid-studio/style");
+  import("vivid-studio/style.css");
 }
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
