@@ -7,14 +7,14 @@ Simply clone this repository, install the necessary dependencies, and test Vivid
 
 With Yarn:
 ```bash
-git clone https://github.com/aryamankha/vivid-demo.git
+git clone https://github.com/vivid-labs/vivid-demo.git
 cd vivid-demo
 yarn
 yarn dev 
 ```
 With npm:
 ```bash
-git clone https://github.com/aryamankha/vivid-demo.git
+git clone https://github.com/vivid-labs/vivid-demo.git
 cd vivid-demo
 npm install
 npm run dev
