@@ -40,7 +40,7 @@ export const Testimonials = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="max-w-3xl h-3 pb-12 mx-auto text-center md:pb-16">
+          <div className="max-w-3xl mx-auto text-center pb-6">
             <h2 className="mb-4 h2">Loved by developers</h2>
             <p className="text-xl text-grayscale-600">
               {" "}

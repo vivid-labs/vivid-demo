@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import { Transition } from "../utils/Transition";
@@ -20,7 +19,7 @@ export const Features = () => {
   }, [tab]);
 
   return (
-    <section className="relative bg-grayscale-100 md:h-fit pb-20">
+    <section className="relative pb-20 bg-grayscale-100 md:h-fit">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute left-0 right-0 w-px h-20 p-px m-auto transform -translate-y-1/2 bg-grayscale-200"></div>
       <div className="absolute left-0 right-0 w-px h-20 p-px m-auto transform -translate-y-1/2 bg-grayscale-200"></div>
@@ -153,7 +152,7 @@ export const Features = () => {
 
             {/* Tabs items */}
             <div
-              className="max-w-xl mb-8 mx-auto flex flex-col justify-center md:max-w-none md:w-full md:col-span-5 lg:col-span-6 md:mb-0 md:order-1"
+              className="flex flex-col justify-center max-w-xl mx-auto mb-8 md:max-w-none md:w-full md:col-span-5 lg:col-span-6 md:mb-0 md:order-1"
               ref={tabs}
             >
               <div className="relative flex flex-col text-center lg:text-right">
@@ -169,16 +168,18 @@ export const Features = () => {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col ">
-                    <div className="p-4 rounded-xl bg-slate-900 md:ml-4">
-                      <Image
-                        className="mx-auto w-full rounded md:max-w-none"
-                        src="/images/iterate.gif"
-                        height="700"
-                        width="1200"
-                        alt="iterate"
-                      />
-                    </div>
+                  <div className="relative inline-flex flex-col overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.4)] rounded-xl md:ml-4">
+                    <img src="images/mac-bar.svg" alt="Mac window bar" />
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full mx-auto md:max-w-none"
+                    >
+                      <source src="/images/preview.webm" type="video/webm" />
+                      <source src="/images/preview.mp4" type="video/mp4" />
+                    </video>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -193,24 +194,18 @@ export const Features = () => {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col ">
-                    <div className="p-4 rounded-xl bg-slate-900 md:ml-4">
-                      <video
-                        autoPlay
-                        loop
-                        muted
-                        className="mx-auto w-full rounded md:max-w-none"
-                      >
-                        <source
-                          src="/images/inspect-element.webm"
-                          type="video/webm"
-                        />
-                        <source
-                          src="/images/inspect-element.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
+                  <div className="relative inline-flex flex-col overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.4)] rounded-xl md:ml-4">
+                    <img src="images/mac-bar.svg" alt="Mac window bar" />
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full mx-auto md:max-w-none"
+                    >
+                      <source src="/images/inspect.webm" type="video/webm" />
+                      <source src="/images/inspect.mp4" type="video/mp4" />
+                    </video>
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -225,24 +220,18 @@ export const Features = () => {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <Image
-                      className="mx-auto rounded md:max-w-none"
-                      src="/images/features-bg.png"
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <img
-                      className="absolute left-0 w-full transform md:max-w-none animate-float"
-                      src="/images/comingsoon.png"
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{
-                        top: "30%",
-                      }}
-                    />
+                  <div className="relative inline-flex flex-col overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.4)] rounded-xl md:ml-4">
+                    <img src="images/mac-bar.svg" alt="Mac window bar" />
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full mx-auto md:max-w-none"
+                    >
+                      <source src="/images/resize.webm" type="video/webm" />
+                      <source src="/images/resize.mp4" type="video/mp4" />
+                    </video>
                   </div>
                 </Transition>
               </div>

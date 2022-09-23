@@ -6,10 +6,19 @@ export const Footer = () => {
     <footer>
       <div className="max-w-6xl px-4 mx-auto sm:px-6">
         {/* Bottom area */}
-        <div className="py-4 border-t border-grayscale-200 md:flex md:items-center md:justify-between md:py-8">
+        <div className="py-4 md:flex md:items-center md:justify-between md:py-8">
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
-            <li>
+            <li className="text-sm text-gray-600">
+              <Link
+                href="https://join.slack.com/t/vivid-jqa6824/shared_invite/zt-1f7tbxl86-wruO1aM7FYmEdNaOOnYCMQ"
+                className="ml-4 mr-4 text-sm text-gray-500"
+                aria-label="Slack"
+              >
+                Join our Slack!
+              </Link>
+            </li>
+            {/* <li>
               <Link
                 href="#"
                 className="flex items-center justify-center text-grayscale-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-grayscale-900 hover:bg-white-100"
@@ -53,7 +62,7 @@ export const Footer = () => {
                   <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
                 </svg>
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           {/* Copyrights note */}

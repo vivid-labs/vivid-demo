@@ -1,5 +1,4 @@
 import axios from "axios";
-import Image from "next/image";
 import { FormEvent, useState } from "react";
 
 export const HeroHome = () => {
@@ -43,7 +42,7 @@ export const HeroHome = () => {
     <section className="relative md:h-screen  dark:bg-slate-800 max-h-[72rem]">
       {/* Illustration behind hero content */}
       <div
-        className="absolute bottom-0 transform -translate-x-1/2 pointer-events-none left-1/2"
+        className="absolute bottom-0 transform -translate-x-1/2 pointer-events-none left-1/2 -z-10"
         aria-hidden="true"
       >
         <svg
@@ -73,9 +72,9 @@ export const HeroHome = () => {
       </div>
       <div className="justify-center h-full px-8 mx-auto max-w-7xl sm:px-10">
         {/* Hero content */}
-        <div className="flex flex-col h-full items-center gap-16 pt-32 pb-12 md:pt-40 md:pb-20 md:flex-row">
+        <div className="flex flex-col items-center h-full gap-16 pt-32 pb-12 md:pt-40 md:pb-20 md:flex-row">
           {/* Section header */}
-          <div className="items-center md:pb-12 text-center md:text-left md:pb-16">
+          <div className="items-center text-center md:pb-12 md:text-left md:pb-16">
             <h1 className="text-4xl dark:text-white md:text-[4.5rem] font-extrabold leading-tighter tracking-tighter mb-4">
               Build{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
@@ -89,11 +88,17 @@ export const HeroHome = () => {
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="mb-8 text-xl text-grayscale-600">
+              <p
+                className="mb-8 text-xl text-grayscale-600"
+                data-aos-delay="150"
+              >
                 Vivid makes front-end development effortless with our in-browser
                 visual editor to modify your code.{" "}
               </p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start">
+              <div
+                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start"
+                data-aos-delay="300"
+              >
                 {/* CTA form */}
                 <form
                   name="googleSheetsSubmit"
@@ -114,7 +119,7 @@ export const HeroHome = () => {
                     <button
                       onClick={() => setEmailSubmitted(true)}
                       type="submit"
-                      className="ml-2 text-white bg-black rounded-lg shadow btn hover:bg-blue-600"
+                      className="text-white bg-black rounded-lg shadow sm:ml-2 btn hover:bg-blue-600"
                     >
                       Waitlist
                     </button>
@@ -128,87 +133,22 @@ export const HeroHome = () => {
           </div>
 
           {/* Hero image */}
-          <div className="relative flex justify-center mb-8 md:max-w-2xl">
-            <div className="flex flex-col justify-center">
-              <div className="flex p-4 rounded-xl bg-slate-900">
-                <Image
-                  placeholder="blur"
-                  blurDataURL="/images/vivid-screen-lq.png"
-                  className="px-8 py-8 mx-auto "
-                  src="/images/vivid-screen-2.gif"
-                  height="700"
-                  width="1200"
-                  alt="Vivid demo"
-                />
-              </div>
-
-              <svg
-                className="absolute inset-0 h-auto max-w-full mx-auto md:max-w-none"
-                width="768"
-                height="432"
-                viewBox="0 0 768 432"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <circle
-                    fillOpacity=".04"
-                    fill="url(#hero-ill-a)"
-                    cx="384"
-                    cy="216"
-                    r="128"
-                  />
-                  <circle
-                    fillOpacity=".16"
-                    fill="url(#hero-ill-b)"
-                    cx="384"
-                    cy="216"
-                    r="96"
-                  />
-                  <g fillRule="nonzero">
-                    <use fill="#000" xlinkHref="#hero-ill-d" />
-                    <use fill="url(#hero-ill-e)" xlinkHref="#hero-ill-d" />
-                  </g>
-                </g>
-              </svg>
-            </div>
-            {/*<button
-                className="absolute flex items-center p-4 font-medium transform -translate-y-1/2 bg-white rounded-full shadow-lg top-full group"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setVideoModalOpen(true);
-                }}
-                aria-controls="modal"
-              >
-                <svg
-                  className="flex-shrink-0 w-6 h-6 fill-current text-grayscale-400 group-hover:text-blue-600"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
-                  <path d="M10 17l6-5-6-5z" />
-                </svg>
-                <span className="ml-3">Watch the full video (2 min)</span>
-              </button>*/}
-          </div>
-
-          {/* Modal 
-          <Modal
-            id="modal"
-            ariaLabel="modal-headline"
-            show={videoModalOpen}
-            handleClose={() => setVideoModalOpen(false)}
+          <div
+            className="relative flex flex-col justify-center mb-8 overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.4)] md:max-w-2xl rounded-xl"
+            data-aos-delay="450"
           >
-            <div className="relative pb-9/16">
-              <iframe
-                className="absolute w-full h-full"
-                src="https://player.vimeo.com/video/174002812"
-                title="Video"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </Modal>*/}
+            <img src="images/mac-bar.svg" alt="Mac window bar" />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full mx-auto rounded md:max-w-none"
+            >
+              <source src="/images/total.webm" type="video/webm" />
+              <source src="/images/total.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </section>

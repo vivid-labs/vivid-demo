@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import AOS from "aos";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 
@@ -28,6 +29,21 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+      <div className="container">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BBP4YTBVKM');
+          `}
+        </Script>
+      </div>
       <Head>
         <link
           rel="apple-touch-icon"
