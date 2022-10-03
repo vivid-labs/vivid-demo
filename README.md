@@ -24,8 +24,4 @@ npm install
 npm run dev
 ```
 
-After running the app in dev mode, you should navigate to localhost:3000 in your Chromium browser (we recommend Chrome) and you can test out Vivid! Be sure to select the correct directory when the app asks you for permissions.
-
-## Functionality
-
-To learn how to use Vivid, check out the [functionality page of our docs](https://docs.vivid.lol/functionality).
+After running the app in dev mode, you should navigate to localhost:3000 in your Chromium browser (we recommend Chrome) and you can test out Vivid! <kbd> Option</kbd>-Click on a component to select. Be sure to select the correct directory when the app asks you for permissions. To learn how to use the command palette and code pane, check out the [functionality page of our docs](https://docs.vivid.lol/functionality).
