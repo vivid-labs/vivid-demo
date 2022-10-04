@@ -89,7 +89,7 @@ export const HeroHome = () => {
               data-aos="zoom-y-out"
             >
               Code{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r to-teal-400 from-cyan-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-teal-400">
                 faster.
               </span>
             </h1>
@@ -139,9 +139,9 @@ export const HeroHome = () => {
               </div>
             </div>
           </div>
-        
+
           {/* Hero image */}
-          </div>
+        </div>
       </div>
     </section>
   );
