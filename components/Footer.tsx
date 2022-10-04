@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="dark:bg-zinc-800">
       <div className="max-w-6xl px-4 mx-auto sm:px-6">
         {/* Bottom area */}
         <div className="py-4 md:flex md:items-center md:justify-between md:py-8">
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
-            <li className="text-sm text-gray-600">
+            <li className="text-sm">
               <Link
                 href="https://join.slack.com/t/vivid-jqa6824/shared_invite/zt-1f7tbxl86-wruO1aM7FYmEdNaOOnYCMQ"
-                className="ml-4 mr-4 text-sm text-gray-500"
+                className="ml-4 mr-4 text-sm text-gray-500 dark:text-zinc-400"
                 aria-label="Slack"
               >
                 Join our Slack!
@@ -21,7 +21,7 @@ export const Footer = () => {
             {/* <li>
               <Link
                 href="#"
-                className="flex items-center justify-center text-grayscale-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-grayscale-900 hover:bg-white-100"
+                className="flex items-center justify-center transition duration-150 ease-in-out bg-white rounded-full shadow text-grayscale-600 hover:text-grayscale-900 hover:bg-white-100"
                 aria-label="Twitter"
               >
                 <svg
@@ -36,7 +36,7 @@ export const Footer = () => {
             <li className="ml-4">
               <Link
                 href="#"
-                className="flex items-center justify-center text-grayscale-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-grayscale-900 hover:bg-white-100"
+                className="flex items-center justify-center transition duration-150 ease-in-out bg-white rounded-full shadow text-grayscale-600 hover:text-grayscale-900 hover:bg-white-100"
                 aria-label="Github"
               >
                 <svg
@@ -51,7 +51,7 @@ export const Footer = () => {
             <li className="ml-4">
               <Link
                 href="#"
-                className="flex items-center justify-center text-grayscale-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-grayscale-900 hover:bg-white-100"
+                className="flex items-center justify-center transition duration-150 ease-in-out bg-white rounded-full shadow text-grayscale-600 hover:text-grayscale-900 hover:bg-white-100"
                 aria-label="Facebook"
               >
                 <svg
@@ -77,7 +77,7 @@ export const Footer = () => {
               ></Image>
             </Link>
             <div className="ml-4 mr-4 text-sm text-grayscale-600">
-              Made by Vivid 2022. All rights reserved.
+              &copy; Vivid Labs, Inc. 2022
             </div>
           </div>
         </div>

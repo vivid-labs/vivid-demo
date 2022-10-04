@@ -13,14 +13,14 @@ export const HeroHome = () => {
     const emailSubmitted = props.emailSubmitted;
     if (emailSubmitted) {
       return (
-        <p className="mt-3 text-sm text-grayscale-400">
+        <p className="mt-3 text-sm text-grayscale-40 dark:text-zinc-400">
           {" "}
           We'll keep you posted!{" "}
         </p>
       );
     }
     return (
-      <p className="mt-3 text-sm text-grayscale-400">
+      <p className="mt-3 text-sm text-grayscale-400 dark:text-zinc-400">
         {" "}
         Be the first to experience Vivid.{" "}
       </p>
@@ -39,10 +39,10 @@ export const HeroHome = () => {
   };
 
   return (
-    <section className="relative md:h-screen  dark:bg-slate-800 max-h-[72rem]">
+    <section className="relative md:h-screen dark:bg-zinc-900 max-h-[72rem]">
       {/* Illustration behind hero content */}
       <div
-        className="absolute bottom-0 transform -translate-x-1/2 pointer-events-none left-1/2 -z-10"
+        className="absolute bottom-0 transform -translate-x-1/2 pointer-events-none dark:invert dark:brightness-90 left-1/2"
         aria-hidden="true"
       >
         <svg
@@ -72,24 +72,31 @@ export const HeroHome = () => {
       </div>
       <div className="justify-center h-full px-8 mx-auto max-w-7xl sm:px-10">
         {/* Hero content */}
-        <div className="flex flex-col items-center h-full gap-16 pt-32 pb-12 md:pt-40 md:pb-20 md:flex-row">
+        <div className="flex flex-col items-center h-full gap-16 pt-32 pb-12 md:pt-40 md:pb-20 md:flex-row justify-center">
           {/* Section header */}
-          <div className="items-center text-center md:pb-12 md:text-left md:pb-16">
-            <h1 className="text-4xl dark:text-white md:text-[4.5rem] font-extrabold leading-tighter tracking-tighter mb-4">
+          <div className="items-center text-center md:text-left md:pb-16">
+            <h1
+              className="text-4xl dark:text-zinc-200 md:text-[4.5rem] font-extrabold leading-tighter tracking-tighter mb-4"
+              data-aos="zoom-y-out"
+            >
               Build{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
                 visually.
               </span>
             </h1>
-            <h1 className="text-4xl  dark:text-white md:text-[4.5rem] font-extrabold leading-tighter tracking-tighter mb-4">
+            <h1
+              className="text-4xl  dark:text-zinc-200 md:text-[4.5rem] font-extrabold leading-tighter tracking-tighter mb-4"
+              data-aos="zoom-y-out"
+            >
               Code{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-teal-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r to-teal-400 from-cyan-600">
                 faster.
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
-                className="mb-8 text-xl text-grayscale-600"
+                className="mb-8 text-xl text-grayscale-600 dark:text-zinc-400"
+                data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
                 Vivid makes front-end development effortless with our in-browser
@@ -97,6 +104,7 @@ export const HeroHome = () => {
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start"
+                data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
                 {/* CTA form */}
@@ -109,7 +117,7 @@ export const HeroHome = () => {
                   <div className="flex flex-col justify-center max-w-xs mx-auto sm:flex-row sm:justify-start sm:max-w-lg lg:mx-0">
                     <input
                       type="email"
-                      className="w-full px-4 py-3 mb-2 border rounded-lg appearance-none placeholder-grayscale-500 form-input bg-slate-50 border-slate-200 focus:border-slate-400 sm:mb-0 sm:mr-2 text-slate-500"
+                      className="w-full px-4 py-3 mb-2 border rounded-lg appearance-none placeholder-grayscale-500 form-input bg-slate-50 dark:bg-zinc-800 dark:border-zinc-600 border-slate-200 focus:border-slate-400 sm:mb-0 sm:mr-2 text-slate-500"
                       placeholder="richard.hendricks@piedpiper.com"
                       aria-label="Your email…"
                       name="email"
@@ -119,7 +127,7 @@ export const HeroHome = () => {
                     <button
                       onClick={() => setEmailSubmitted(true)}
                       type="submit"
-                      className="text-white bg-black rounded-lg shadow sm:ml-2 btn hover:bg-blue-600"
+                      className="text-white bg-black rounded-lg shadow dark:text-zinc-900 dark:bg-zinc-300 sm:ml-2 btn hover:bg-blue-600"
                     >
                       Waitlist
                     </button>
@@ -131,25 +139,9 @@ export const HeroHome = () => {
               </div>
             </div>
           </div>
-
+        
           {/* Hero image */}
-          <div
-            className="relative flex flex-col justify-center mb-8 overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.4)] md:max-w-2xl rounded-xl"
-            data-aos-delay="450"
-          >
-            <img src="images/mac-bar.svg" alt="Mac window bar" />
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full mx-auto rounded md:max-w-none"
-            >
-              <source src="/images/total.webm" type="video/webm" />
-              <source src="/images/total.mp4" type="video/mp4" />
-            </video>
           </div>
-        </div>
       </div>
     </section>
   );

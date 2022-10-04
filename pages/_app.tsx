@@ -7,6 +7,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
+import { useDarkMode } from "usehooks-ts";
 
 if (
   typeof window !== "undefined" &&
@@ -18,6 +19,18 @@ if (
 }
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const { isDarkMode, toggle } = useDarkMode();
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.setProperty("color-scheme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.setProperty("color-scheme", "light");
+    }
+  }, [isDarkMode]);
+
   useEffect(() => {
     AOS.init({
       once: true,
@@ -43,6 +56,54 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             gtag('config', 'G-BBP4YTBVKM');
           `}
         </Script>
+        <Script strategy="beforeInteractive">
+          {`
+            // Insert this script in your index.html right after the <body> tag.
+            // This will help to prevent a flash if dark mode is the default.
+            
+            (function() {
+              // Change these if you use something different in your hook.
+              var storageKey = 'usehooks-ts-dark-mode';
+              var classNameDark = 'dark';
+              var classNameLight = '';
+            
+              function setClassOnDocumentBody(darkMode) {
+                if (darkMode) {
+                  document.documentElement.classList.add(classNameDark);
+                  document.documentElement.style.setProperty('color-scheme', 'dark');
+                } else {
+                  document.documentElement.style.setProperty("color-scheme", "light");
+                }
+              }
+              
+              var preferDarkQuery = '(prefers-color-scheme: dark)';
+              var mql = window.matchMedia(preferDarkQuery);
+              var supportsColorSchemeQuery = mql.media === preferDarkQuery;
+              var localStorageTheme = null;
+              try {
+                localStorageTheme = localStorage.getItem(storageKey);
+              } catch (err) {}
+              var localStorageExists = localStorageTheme !== null;
+              if (localStorageExists) {
+                localStorageTheme = JSON.parse(localStorageTheme);
+              }
+            
+              // Determine the source of truth
+              if (localStorageExists) {
+                // source of truth from localStorage
+                setClassOnDocumentBody(localStorageTheme);
+              } else if (supportsColorSchemeQuery) {
+                // source of truth from system
+                setClassOnDocumentBody(mql.matches);
+                localStorage.setItem(storageKey, mql.matches);
+              } else {
+                // source of truth from document.body
+                var isDarkMode = document.documentElement.classList.contains(classNameDark);
+                localStorage.setItem(storageKey, JSON.stringify(isDarkMode));
+              }
+            })();
+          `}
+        </Script>
       </div>
       <Head>
         <link
@@ -64,7 +125,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content={isDarkMode ? "#18181b" : "#ffffff"} />
         <meta property="og:title" content="Vivid" />
         <meta
           property="og:description"
@@ -79,7 +140,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         title="Vivid"
         description="Make CSS styling a breeze with Vivid's in-browser visual editor that automatically updates your code."
       />
-      <Component {...pageProps} />
+      <Component {...pageProps} isDarkMode={isDarkMode} toggle={toggle} />
     </>
   );
 };

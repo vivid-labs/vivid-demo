@@ -6,11 +6,11 @@ import { HeroHome } from "../components/HeroHome";
 import { Newsletter } from "../components/Newsletter";
 import { Testimonials } from "../components/Testimonials";
 
-const Home = () => {
+const Home = ({ isDarkMode, toggle }) => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
-      <Header />
+      <Header isDarkMode={isDarkMode} toggle={toggle} />
       {/*  Page content */}
       <main className="flex-grow">
         {/*  Page sections */}

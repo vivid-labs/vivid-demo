@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Testimonials = () => {
   return (
-    <section className=" bg-grayscale-100 relative">
+    <section className="relative bg-grayscale-200 dark:bg-zinc-800">
       {/* Illustration behind content */}
       {/* <div
         className="absolute top-0 -mb-32 transform -translate-x-1/2 pointer-events-none left-1/2"
@@ -40,9 +40,9 @@ export const Testimonials = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-6">
+          <div className="max-w-3xl pb-6 mx-auto text-center">
             <h2 className="mb-4 h2">Loved by developers</h2>
-            <p className="text-xl text-grayscale-600">
+            <p className="text-xl text-grayscale-600 dark:text-zinc-400">
               {" "}
               Styling your web app has never been easier.{" "}
             </p>
@@ -52,9 +52,12 @@ export const Testimonials = () => {
           {/* Testimonials */}
           <div className="grid grid-cols-1 gap-0.5 md:grid-cols-3 md:gap-6">
             {/* Testimonial 1*/}
-            <div className="max-w-3xl w-full mx-auto mt-20">
-              <div className="relative flex items-center bg-white border-2 border-grayscale-200 rounded">
-                <div className="px-12 w-full py-8 pt-20 mx-4 text-center md:mx-0">
+            <div
+              className="w-full max-w-3xl mx-auto mt-20"
+              data-aos="zoom-y-out"
+            >
+              <div className="relative flex items-center bg-white border-2 rounded border-grayscale-200 dark:bg-zinc-700 dark:border dark:border-zinc-500 dark:text-zinc-300">
+                <div className="w-full px-12 py-8 pt-20 mx-4 text-center md:mx-0">
                   <div className="absolute top-0 -mt-8 transform -translate-x-1/2 left-1/2">
                     <svg
                       className="absolute top-0 right-0 w-16 h-16 -mt-3 -mr-8 text-blue-500 fill-current"
@@ -76,10 +79,10 @@ export const Testimonials = () => {
                     <blockquote className="mb-4 text-xl font-medium">
                       “This is witchcraft. How did you do this?“
                     </blockquote>
-                    <cite className="block mb-1 text-lg not-italic font-bold">
+                    <cite className="block mb-1 text-lg not-italic font-bold dark:text-zinc-300">
                       Zahid Mahmood
                     </cite>
-                    <div className="text-grayscale-600">
+                    <div className="text-grayscale-600 dark:text-zinc-500">
                       <span>CTO & Co-Founder</span>{" "}
                       <a
                         className="text-blue-600 hover:underline"
@@ -93,9 +96,12 @@ export const Testimonials = () => {
               </div>
             </div>
             {/* Testimonial 2 */}
-            <div className="max-w-3xl w-full mx-auto mt-20">
-              <div className="relative flex items-center bg-white border-2 border-grayscale-200 rounded">
-                <div className="px-12 w-full py-8 pt-20 mx-4 text-center md:mx-0">
+            <div
+              className="w-full max-w-3xl mx-auto mt-20"
+              data-aos="zoom-y-out"
+            >
+              <div className="relative flex items-center bg-white border-2 rounded border-grayscale-200 dark:bg-zinc-700 dark:border dark:border-zinc-500 dark:text-zinc-300">
+                <div className="w-full px-12 py-8 pt-20 mx-4 text-center md:mx-0">
                   <div className="absolute top-0 -mt-8 transform -translate-x-1/2 left-1/2">
                     <svg
                       className="absolute top-0 right-0 w-16 h-16 -mt-3 -mr-8 text-blue-500 fill-current"
@@ -117,10 +123,10 @@ export const Testimonials = () => {
                     <blockquote className="mb-4 text-xl font-medium">
                       “I could've beaten Pied Piper with this.“
                     </blockquote>
-                    <cite className="block mb-1 text-lg not-italic font-bold">
+                    <cite className="block mb-1 text-lg not-italic font-bold dark:text-zinc-300">
                       Gavin Belson
                     </cite>
-                    <div className="text-grayscale-600">
+                    <div className="text-grayscale-600 dark:text-zinc-500">
                       <span>CEO</span>{" "}
                       <a
                         className="text-blue-600 hover:underline"
@@ -133,9 +139,12 @@ export const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="max-w-3xl w-full mx-auto mt-20">
-              <div className="relative flex items-center bg-white border-2 border-grayscale-200 rounded">
-                <div className="px-12 w-full py-8 pt-20 mx-4 text-center md:mx-0">
+            <div
+              className="w-full max-w-3xl mx-auto mt-20"
+              data-aos="zoom-y-out"
+            >
+              <div className="relative flex items-center bg-white border-2 rounded border-grayscale-200 dark:bg-zinc-700 dark:border dark:border-zinc-500 dark:text-zinc-300">
+                <div className="w-full px-12 py-8 pt-20 mx-4 text-center md:mx-0">
                   <div className="absolute top-0 -mt-8 transform -translate-x-1/2 left-1/2">
                     <svg
                       className="absolute top-0 right-0 w-16 h-16 -mt-3 -mr-8 text-blue-500 fill-current"
@@ -158,10 +167,10 @@ export const Testimonials = () => {
                       “This is wild - it's going to save me hours of development
                       time“
                     </blockquote>
-                    <cite className="block mb-1 text-lg not-italic font-bold">
+                    <cite className="block mb-1 text-lg not-italic font-bold dark:text-zinc-300">
                       Tejal Patwardhan
                     </cite>
-                    <div className="text-grayscale-600">
+                    <div className="text-grayscale-600 dark:text-zinc-500">
                       <span>Founder</span>{" "}
                       <a
                         className="text-blue-600 hover:underline"

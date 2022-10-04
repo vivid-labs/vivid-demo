@@ -1,6 +1,6 @@
 export const FeaturesBlocks = () => {
   return (
-    <section className="relative flex pb-20 flex-grow">
+    <section className="relative flex flex-grow pb-20 dark:bg-zinc-900">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute bottom-0 left-0 right-0 w-px h-20 p-px m-auto transform translate-y-1/2 bg-grayscale-200"></div>
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6">
@@ -13,7 +13,7 @@ export const FeaturesBlocks = () => {
                 breeze
               </span>
             </h2>
-            <p className="text-xl text-grayscale-600">
+            <p className="text-xl text-grayscale-600 dark:text-zinc-400">
               Stop wasting your time. Vivid makes CSS easier than recursive
               depth-first search.{" "}
             </p>
@@ -22,7 +22,7 @@ export const FeaturesBlocks = () => {
           {/* Items */}
           <div className="grid items-start max-w-sm gap-6 mx-auto md:max-w-2xl lg:max-w-none lg:grid-cols-3">
             {/* 1st item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl dark:border dark:border-zinc-600 dark:bg-zinc-800">
               <svg
                 className="w-16 h-16 p-1 mb-2 -mt-1"
                 viewBox="0 0 64 64"
@@ -57,16 +57,16 @@ export const FeaturesBlocks = () => {
                   </g>
                 </g>
               </svg>
-              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight dark:text-zinc-300">
                 In-browser
               </h4>
-              <p className="text-center text-grayscale-600">
+              <p className="text-center text-grayscale-600 dark:text-zinc-400">
                 Edit your styling from the most natural place - where it renders
               </p>
             </div>
 
             {/* 2nd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl dark:border dark:border-zinc-600 dark:bg-zinc-800">
               <svg
                 className="w-16 h-16 p-1 mb-2 -mt-1"
                 viewBox="0 0 64 64"
@@ -98,17 +98,17 @@ export const FeaturesBlocks = () => {
                   </g>
                 </g>
               </svg>
-              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight dark:text-zinc-300">
                 Code first
               </h4>
-              <p className="text-center text-grayscale-600">
+              <p className="text-center text-grayscale-600 dark:text-zinc-400">
                 Use Vivid's command palette and code pane to edit styling using
                 code
               </p>
             </div>
 
             {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl dark:border dark:border-zinc-600 dark:bg-zinc-800">
               <svg
                 className="w-16 h-16 p-1 mb-2 -mt-1"
                 viewBox="0 0 64 64"
@@ -133,16 +133,16 @@ export const FeaturesBlocks = () => {
                   </g>
                 </g>
               </svg>
-              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight dark:text-zinc-300">
                 Modern frameworks
               </h4>
-              <p className="text-center text-grayscale-600">
+              <p className="text-center text-grayscale-600 dark:text-zinc-400">
                 Build components using Vivid in React styled with Tailwind CSS
               </p>
             </div>
 
             {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl dark:border dark:border-zinc-600 dark:bg-zinc-800">
               <svg
                 className="w-16 h-16 p-1 mb-2 -mt-1"
                 viewBox="0 0 64 64"
@@ -180,17 +180,17 @@ export const FeaturesBlocks = () => {
                   </g>
                 </g>
               </svg>
-              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight dark:text-zinc-300">
                 Production-ready code
               </h4>
-              <p className="text-center text-grayscale-600">
+              <p className="text-center text-grayscale-600 dark:text-zinc-400">
                 Modify your styling in-browser and update your IDE with code
                 that looks like your own
               </p>
             </div>
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl dark:border dark:border-zinc-600 dark:bg-zinc-800">
               <svg
                 className="w-16 h-16 p-1 mb-2 -mt-1"
                 viewBox="0 0 64 64"
@@ -215,16 +215,16 @@ export const FeaturesBlocks = () => {
                   </g>
                 </g>
               </svg>
-              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight dark:text-zinc-300">
                 Your workflow
               </h4>
-              <p className="text-center text-grayscale-600">
+              <p className="text-center text-grayscale-600 dark:text-zinc-400">
                 Keep using your browser and IDE without needing an extra window
               </p>
             </div>
 
             {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl dark:border dark:border-zinc-600 dark:bg-zinc-800">
               <svg
                 className="w-16 h-16 p-1 mb-2 -mt-1"
                 viewBox="0 0 64 64"
@@ -258,10 +258,10 @@ export const FeaturesBlocks = () => {
                   </g>
                 </g>
               </svg>
-              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight">
+              <h4 className="mb-1 text-xl font-bold leading-snug tracking-tight dark:text-zinc-300">
                 Smarter inspect element
               </h4>
-              <p className="text-center text-grayscale-600">
+              <p className="text-center text-grayscale-600 dark:text-zinc-400">
                 Understand and modify the components making up your design with
                 just one click
               </p>
