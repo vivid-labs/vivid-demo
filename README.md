@@ -4,7 +4,7 @@ A demo repository to play around with Vivid! Mess around with a copy of our land
 
 ## Getting started
 
-Simply clone this repository, install the necessary dependencies, and test Vivid out right away. We recommend Yarn, but if you're using NPM, be sure to delete the yarn.lock file after cloning.
+Simply clone this repository, install the necessary dependencies, and test Vivid out right away. 
 
 With Yarn:
 
