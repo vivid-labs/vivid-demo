@@ -6,8 +6,7 @@ export const HeroHome = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [email, setEmail] = useState("");
 
-  const sheetsURL =
-    "https://sheet.best/api/sheets/a0159a76-267d-4f5b-96a4-31c4c153dc9e";
+  const sheetsURL = "INSERT SHEETS.BEST URL HERE"
 
   const EmailMessage = (props: any) => {
     const emailSubmitted = props.emailSubmitted;
